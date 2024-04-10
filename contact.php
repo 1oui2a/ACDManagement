@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<script src="js/logo.js" defer></script>
+    </head>
+    <body>
+		<style>
+			body {
+				background-color: pink;
+			}
+		</style>
+        
+			<header class="header">
+				<a href="#" class="logo">Logo</a>
+	
+				<input type="checkbox" id="check">
+				<label for="check" class="icons">
+					<i class='bx bx-menu' id="menu-icon"></i>
+					<i class='bx bx-x' id="close-icon"></i>
+				</label>
+					
+			<nav class="header-nav">
+				<a href="index.php" style="--i:0;">Home</a>
+				<a href="about.php" style="--i:1;">About</a>
+				<a href="portfolio.php" style="--i:2;">Portfolio</a>
+				<a href="contact.php" style="--i:3;">Contact</a>
+				<a href="bookings.php" style="--i:4;">Bookings</a>
+			</nav>
+        </header>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="contact-container">
+			<form actions="" class="contact left">
+				<div class="contact-left-title">
+					<h2>Get in touch</h2>
+					<hr>
+				</div>
+
+				<input type="text" name="name" placeholder="Your name" class="Contact-inputs" required>
+				<input type="email" name="email" placeholder="Your email" class="Contact-inputs" required>
+				<textarea name="message" placeholder="Your message" class="Contact-inputs" required></textarea>
+				<button type="submit" class="Contact-inputs">Sbmit <img src="img/arrow_icon.png"></button>
+			</form>
+
+			<div class="contact right">
+				<img src="img/right_img.png" alt="">
+			</div>
+		</div>
+
+		
+
+
+       <footer class="footer">
+			<div class="footer-content">
+				<div class="footer-row">
+					<div class="footer-col">
+						<h4>Home</h4>
+						<ul>
+							<li><a href="#">HomePage</a></li>
+							<li><a href="#">HomePage</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>About</h4>
+							<ul>
+								<li><a href="#">Learn More</a></li>
+								<li><a href="#">HomePage</a></li>
+							</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Portfolio</h4>
+							<ul>
+								<li><a href="#">My Work</a></li>
+								<li><a href="#">HomePage</a></li>
+							</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact</h4>
+							<ul>
+								<li><a href="#">Contact Me</a></li>
+								<li><a href="#">HomePage</a></li>
+							</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Bookings</h4>
+							<ul>
+								<li><a href="#">Book Here</a></li>
+								<li><a href="#">HomePage</a></li>
+							</ul>
+						</div>
+					<div class="footer-col">
+						<h4>Follow Us</h4>
+							<div class="social-links">
+								<a href="#"><i class='bx bxl-facebook'></i></a>
+								<a href="#"><i class='bx bxl-twitter'></i></a>
+								<a href="#"><i class='bx bxl-instagram'></i></a>
+								<a href="#"><i class='bx bxl-linkedin'></i></a>
+							</div>
+					</div>
+				</div>
+				<p>&copy; 2024 ACD Management. All rights reserved.</p>
+			</footer>
+		
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SY35FZCDLS"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-SY35FZCDLS');
+	</script>
+
+
+</body>
+</html>
