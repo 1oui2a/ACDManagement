@@ -1,5 +1,5 @@
 -- Set storage engine to InnoDB
-SET default_storage_engine=InnoDB;
+/*SET default_storage_engine=InnoDB;
 -- Delete database if it currently exists
 DROP DATABASE IF EXISTS databaseACD;
 -- Create database with utf8mb4 character set and utf8mb4_unicode_ci collation
