@@ -7,7 +7,7 @@ CREATE DATABASE databaseACD CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- Use the newly created database
 USE databaseACD;
 
-/*CREATE TABLE `users` (
+  CREATE TABLE `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(250) NOT NULL DEFAULT '',
   `password` varchar(200) NOT NULL DEFAULT '',
@@ -15,12 +15,12 @@ USE databaseACD;
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 LOCK TABLES `users` WRITE;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+  !40000 ALTER TABLE `users` DISABLE KEYS ;
 
 INSERT INTO `users` (`id`, `email`, `password`)
 VALUES
 	(1,'admin','$2y$10$n8NIJ5zsmtIxASEZSzWyi.7Pu50x5Z8F1uGcTiNA4rEXbS78EOuha'),
 	(2,'email123@email.com','$2y$10$9OOFy5W.Vz0VapyS5U.ZqujRiXnklh48Nhc3qGfdSKxLbXRH3i87m');
 
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+  !40000 ALTER TABLE `users` ENABLE KEYS ;
 UNLOCK TABLES;
