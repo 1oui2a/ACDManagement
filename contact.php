@@ -1,3 +1,8 @@
+<?php
+session_start();
+require 'database.php';
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +16,7 @@
     <body>
 		<style>
 			body {
-				background-color: pink;
+				background-color: #f5f5f5;
 			}
 		</style>
         
