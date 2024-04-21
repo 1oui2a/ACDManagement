@@ -331,3 +331,13 @@ ul{
     color: hsl(var(208), 77%, 48%);
     transition: 0.3s;
 }
+
+.text a:hover{
+    color: var(--red);
+}
+
+.contact-form{
+    display: grid;
+    margin-top: 2.55rem;
+    grid-template-columns: repeat(2, 1fr);
+}
