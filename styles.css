@@ -304,7 +304,7 @@ ul{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     position: relative;
-    z-index: 3; /* covers footer right now */
+    /*z-index: 3; /* covers footer right now */
 }
 
 .contact-heading h1{
@@ -340,4 +340,43 @@ ul{
     display: grid;
     margin-top: 2.55rem;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.input-wrap{
+    position:relative;
+}
+
+.input-wrap.w-100{
+    grid-column: span 2;
+}
+
+.contact-input{
+    width: 100%;
+    background-color: var(--dark_red);
+    padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 20px;
+    color: var(--black);
+    font-weight: 0.95rem;
+}
+
+.contact-input:hover{
+
+}
+
+.input-wrap label{
+    position:absolute;
+    top: 50%;
+    left: cacl(1.35rem + 2px);
+    transform: translate(-50%);
+    color:blueviolet;
+
+}
+
+.input-wrap .icon{
+    
 }
