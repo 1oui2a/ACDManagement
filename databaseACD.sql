@@ -7,7 +7,7 @@ CREATE DATABASE databaseACD CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- Use the newly created database
 USE databaseACD;
 
-CREATE TABLE `users` (
+/*CREATE TABLE `users` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(250) NOT NULL DEFAULT '',
   `password` varchar(200) NOT NULL DEFAULT '',
