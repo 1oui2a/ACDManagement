@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link rel="stylesheet" href="contact.css">
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="js/logo.js" defer></script>
+    </head>
+    <header class="header">
+        <a href="#" class="logo">Logo</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+            
+    <nav class="header-nav">
+        <a href="index.html" style="--i:0;">Home</a>
+        <a href="about.html" style="--i:1;">About</a>
+        <a href="portfolio.html" style="--i:2;">Portfolio</a>
+        <a href="contact2.html" style="--i:3;">Contact</a>
+        <a href="bookings.html" style="--i:4;">Bookings</a>
+    </nav>
+    </header>
+
+    <body>
+
+        <div class="wrapper">
+            <form action="">
+                <h1>Contact Us</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" required>
+                    <box-icon name='user' type='solid' flip='horizontal' color='#ebecef' ></box-icon>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" required>
+                    <box-icon name='user' type='solid' flip='horizontal' color='#ebecef' ></box-icon>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <box-icon name='envelope' flip='horizontal' color='#ebecef' ></box-icon>
+                </div>
+                <div class="input-box">
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <box-icon name='message-square-dots' flip='horizontal' color='#ebecef' ></box-icon>
+                </div>
+                <button type="submit" class="btn">Send</button>
+                </form>
+
+</body>
+
+</html>
