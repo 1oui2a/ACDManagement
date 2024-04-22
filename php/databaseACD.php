@@ -1,16 +1,25 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "databaseACD";
+ function db_connect(){
+     $servername = "localhost";
+     $username = "root";
+     $password = "";
+     $dbname = "databaseACD";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+        // Create connection
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+        // Check connection
+        if (!$conn) {
+            die("Connection failed: " . mysqli_connect_error());
+        }
+        return $conn;
+    }
+
+    // Query the database
+    function db_query($conn, $query){
+        $result = mysqli_query($conn, $query);
+        return $result;
+    }
 
 // Get data from form
 $firstName = $_POST["firstName"];
