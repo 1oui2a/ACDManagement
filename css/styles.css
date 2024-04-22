@@ -478,4 +478,86 @@ ul{
     opacity: 1;
 }
 
-/* ABOUT PAGE */
+/* HOME PAGE */
+
+/* Hero section styles */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.1);
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #ee2200;
+}
+
+/* Services section styles */
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.service {
+    flex: 1;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.service h2 {
+    font-size: 2rem;
+}
+
+.service p {
+    font-size: 1.2rem;
+}
+
+/* Featured artists section styles */
+.featured-artists {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.featured-artists h2 {
+    font-size: 2.5rem;
+}
