@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ACD Management</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/bookings.css">
 		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 		<script src="js/logo.js" defer></script>
     </head>
@@ -39,6 +39,27 @@
 <br>
 
 
+    <h1>Book a Consultation</h1>
+	<form class="booking-form" action="databaseACD.php" method="post">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time"><br>
+        <label for="service">Service:</label><br>
+        <select id="service" name="service">
+            <option value="photography">Photography</option>
+            <option value="gigManagement">Gig Management</option>
+        </select><br>
+        <input type="submit" value="Submit">
+		</form>
+
+	<!--
 	<footer class="footer">
 		<div class="footer-content">
 			<div class="footer-row">
