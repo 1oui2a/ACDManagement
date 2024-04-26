@@ -240,3 +240,132 @@ h1 {
 .booking-form input[type="submit"]:hover {
     background-color: var(--dark_red);
 }
+
+/* FOOTER */
+
+.footer-content {
+    max-width: 1170px;
+    margin: auto;
+    
+}
+
+.footer {
+    background-color: #7D262F;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 16%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4 {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 500;
+    background-color: var(black);
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--white);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #bbbbbb;
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--red);
+    padding-left: 8px;
+}
+
+.footer-col p {
+    color: var(--white);
+    font-size: .9rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.footer-col .social-links a:hover {
+    COLOR: #24262B;
+    background-color: WHITE;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 992px) {
+    .footer-col {
+        width: 14%;
+        margin-bottom: 30px;
+    }
+    .footer-col .social-links a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-col {
+        width: 25%;
+    }
+    .footer-col h4 {
+        font-size: 1.1rem;
+    }
+    .footer-col ul li a {
+        font-size: .9rem;
+    }
+    .footer-col p {
+        font-size: .8rem;
+    }
+    .footer-col .social-links a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+}
