@@ -667,3 +667,48 @@ ul{
     text-shadow: 0 0 5px #999;
     font-size: 8px;
 }
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        flex-basis: 100%;
+    }
+    .cardtop {
+        width: 100%;
+    }
+    .cardtop p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .section1 {
+        padding-top: 50px;
+    }
+    .section2 {
+        padding-top: 50px;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardtop {
+        width: 100%;
+    }
+    .cardtop p {
+        font-size: 12px;
+    }
+}/* RESPONSIVENESS */
+
+
+
+
