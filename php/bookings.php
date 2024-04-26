@@ -7,7 +7,7 @@ error_reporting(E_ALL);
      $servername = "localhost";
      $username = "root";
      $password = "";
-     $dbname = "databaseACD";
+     $dbname = "acdmanagement";
 
         // Create connection
         $conn = mysqli_connect($servername, $username, $password, $dbname);
