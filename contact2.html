@@ -37,19 +37,19 @@
             <form action="php/email.php" method="post">
                 <h1>Contact Us</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="First Name" required>
+                    <input type="text" name="first_name" placeholder="First Name" required>
                     <box-icon name='user' type='solid' flip='horizontal' color='#ebecef' ></box-icon>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
                     <box-icon name='user' type='solid' flip='horizontal' color='#ebecef' ></box-icon>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                     <box-icon name='envelope' flip='horizontal' color='#ebecef' ></box-icon>
                 </div>
                 <div class="input-box textarea">
-                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <textarea name="message" placeholder="Message" required></textarea>
                     <box-icon name='message-square-dots' flip='horizontal' color='#ebecef' ></box-icon>
                 </div>
                 <button type="submit" class="btn">Send</button>
