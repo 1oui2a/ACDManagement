@@ -10,11 +10,13 @@ CREATE DATABASE databaseACD CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- Use the newly created database
 USE databaseACD;
 
- CREATE TABLE booking (
+
+CREATE TABLE bookings (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    firstName VARCHAR(50),
-    lastName VARCHAR(50),
-    email VARCHAR(100),
-    date DATE,
-    time TIME
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    service VARCHAR(50) NOT NULL
 );

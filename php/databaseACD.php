@@ -22,14 +22,14 @@
     }
 
 // Get data from form
-$firstName = $_POST["firstName"];
-$lastName = $_POST["lastName"];
+$firstName = $_POST["first_name"];
+$lastName = $_POST["last_name"];
 $email = $_POST["email"];
 $date = $_POST["date"];
 $time = $_POST["time"];
 
 // Prepare and bind for security to prevent injection attacks
-$stmt = $conn->prepare("INSERT INTO booking (firstName, lastName, email, date, time) VALUES (?, ?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO bookings (first_name, last_name, email, date, time) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("sssss", $firstName, $lastName, $email, $date, $time);
 
 // Execute the prepared statement
