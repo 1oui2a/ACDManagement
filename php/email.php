@@ -1,12 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstName = $_POST["firstName"];
-    $lastName = $_POST["lastName"];
+    $firstName = $_POST["first_name"];
+    $lastName = $_POST["last_name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
     $to = "louizamoran1@yahoo.ie";
-    $subject = "New message from $firstName $lastName";
+    $subject = "New message from $first_name $last_name";
     $headers = "From: $email";
 
     if (mail($to, $subject, $message, $headers)) {
