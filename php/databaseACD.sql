@@ -4,11 +4,11 @@
 -- Set storage engine to InnoDB
 SET default_storage_engine=InnoDB;
 -- Delete database if it currently exists
-DROP DATABASE IF EXISTS databaseACD;
+DROP DATABASE IF EXISTS acdmanagement;
 -- Create database with utf8mb4 character set and utf8mb4_unicode_ci collation
-CREATE DATABASE databaseACD CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE acdmanagement CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 -- Use the newly created database
-USE databaseACD;
+USE acdmanagement;
 
 
 CREATE TABLE bookings (
