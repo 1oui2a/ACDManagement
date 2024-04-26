@@ -484,63 +484,186 @@ ul{
 
 /* HOME PAGE */
 
-.section1, .section2 {
-    width:100%;
-    min-height: 100vh;
-    position: relative;
-    transform-style: preserve-3d;
-  }
 
-  .card-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%; /* Adjust this value as needed */
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/effects1.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+    .col {
+        flex-basis: 50% ;
+    }
+
+    h1{
+        color: #fff;
+        font-size: 100px;
+    }
+
+    .row .col1 p{
+        color: #fff;
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url('../img/gradiant.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.section1, .section2 {
+    flex: 1;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.section2 {
+    flex: 1;
+    padding-top: 75px; /* Increase this value to move the content lower */
 }
 
 .card {
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Adjust as needed */
+    width: 800px;
+    height: 800px;
     text-align: center;
+    margin-top: 20px;
 }
 
-.card-image {
+.card img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-.card-button {
+.card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* SECTION 2 HOME PAGE */
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animated-text {
+    animation: slide-up 2s ease-out forwards;
+    padding-right: 50px;
+}
+
+.button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #0099cc;
-    color: #ffffff;
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-  .section1::before{
-    content:"";
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    background: url('../img/thisispopmartina.JPG') top center;
-    background-size: cover;
-    transform: translateZ(-1px) scale(2.2);
-    filter: blur(2px);
+.button:hover {
+    background-color: #666;
+}
 
-  }
-  .section2 {
-    background: rgb(68,35,19);
-  }
-  .text {
-    top:30%;
-    left:50%;
-    position: absolute;
-    font-family: 'Franklin Gothic Heavy';
-    font-size: 15vw;
-    color:white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-    5px 5px 70px rgba(255,255,255,0.5);
-    transform: scale(1,1.1) translate(-50%, 10%);
-  }
+.buttonrow{
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.col1 {
+    flex-basis: 50%;
+}
+.cardtop {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+
+    transition: transform 0.5s;
+
+}
+.card1 {
+    background-image: url(../img/guitargirl2.JPG);
+}
+.card2 {
+    background-image: url(../img/guitargirl2.JPG);
+}
+.card3 {
+    background-image: url(../img/guitargirl2.JPG);
+}
+.card4 {
+    background-image: url(../img/guitargirl2.JPG);
+}
+
+.cardtop:hover{
+    transform: translateY(-10px);
+}
+
+.h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.cardtop p{
+    text-shadow: 0 0 5px #999;
+    font-size: 8px;
+}

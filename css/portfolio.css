@@ -312,9 +312,9 @@ body {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 40px;
     padding: 20px;
-    margin-top: 700px;
+    margin-top: 800px;
 }
 
 .gallery-item {
@@ -348,5 +348,7 @@ body {
 .gallery-item:hover .image-title {
     opacity: 1;
 }
+
+
 
 

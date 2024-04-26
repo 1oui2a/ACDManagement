@@ -39,10 +39,11 @@
 <br>
 
 <style>
-    .about-text {
-      flex: 1 1 auto; /* Allocate remaining space to the text */
-	  padding-right: 20px;
-    }
+  
+  h2 {
+	text-align: center;
+	margin-top: 100px;
+  }
     .about-video {
 	  width: 60%; /* Adjust width as needed */
 	  height: 70VH; /* Adjust height as needed */
@@ -50,25 +51,72 @@
     }
 
 	.video-container{
-		display: flex; /* Arrange content side-by-side */
+	  display: flex; /* Arrange content side-by-side */
 	  justify-content: center; /* Horizontally center content within container */
 	  align-items: center; /* Vertically center content within container */
 	  height: 100vh;
 	}
+
+	#artists {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .artist-grid {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .artist-card {
+        width: 200px;
+        margin: 20px;
+    }
+
+    .artist-card img {
+        width: 100%;
+        height: auto;
+    }
+
+	.cards-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 60%; /* Adjust as needed */
+		margin: 0 10px;
+    }
   </style>
 
-
-<div class="about-container">
-    <div class="about-text">
-        ACD management;  independent event & artist manager.
-ACD management aids independent artists in hosting gigs and events to showcase their music in venues with packed audiences, specialising in the Dublin area.
-ACD management has put on plenty of successful shows, such as; 
+<div class="cards-container">
+    <div class="section2">
+        <div class="card">
+            <img src="img/martinamoons.JPG" alt="Image">
+            <div class="card-content">
+                <h2>Martina and the Moons</h2>
+                <p>Your description here.</p>
+                <a href="your_link.html" class="button">Your Button Text</a>
+            </div>
+        </div>
     </div>
-    <img src="img/effects1.jpeg" alt="About Us Image" class="about-image">
+
+    <div class="section2">
+        <div class="card">
+            <img src="img/NiallChurch.jpeg" alt="Image">
+            <div class="card-content">
+                <h2>Niall Bliase</h2>
+                <p>Your description here.</p>
+                <a href="your_link.html" class="button">Your Button Text</a>
+            </div>
+        </div>
+    </div>
 </div>
 
-
+<div class="headerh2">
 <h2>Martina and The Moons, co directed by me, Alana Dinan</h2>
+</div>
   <div class="video-container">
   <iframe class="about-video" width="560" height="315" src="https://www.youtube.com/embed/sA0T-Zyf1tU?si=juQ4zRgrrzItjLLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	</div>
