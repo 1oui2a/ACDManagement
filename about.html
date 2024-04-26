@@ -42,6 +42,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+body{
+	background: url(img/gradiant.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
+
 	h1{
 		text-align: center;
 		margin-top: 100px;
@@ -70,26 +78,7 @@
 	  height: 100vh;
 	}
 
-	#artists {
-        text-align: center;
-        padding: 50px 0;
-    }
 
-    .artist-grid {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .artist-card {
-        width: 200px;
-        margin: 20px;
-    }
-
-    .artist-card img {
-        width: 100%;
-        height: auto;
-    }
 
 	.cards-container {
 		margin-top: 20px;
@@ -111,14 +100,17 @@
     }
 
 	.events {
-		display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: FLEX;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 10px;
+    margin-top: 100px;
 }
 
 .events-item {
-	width: 28%; /* Adjusts the width of the items */
-    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+	width:100%;
 }
 
 .events-item img {
@@ -126,6 +118,9 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+	display: block;
+	margin: 0 auto;
+
 }
 
 .events-item:hover img {
@@ -144,11 +139,21 @@
     transition: opacity 0.3s ease;
 }
 
+p, li {
+    font-size: 20px; /* Adjust as needed */
+	text-align: center;
+}
 .events-item:hover .image-title {
     opacity: 1;
 }
-
   </style>
+  <h2>ACD Management: Independent Event & Artist Manager</h2>
+  <p>ACD management aids independent artists in hosting gigs and events to showcase their music in venues with packed audiences, specialising in the Dublin area.</p>
+  <p>ACD management has put on plenty of successful shows, such as:</p>
+  <ul>
+	  <li>Ladies First, ladies first is a run of shows that take place in the grand social throughout the year. This gig celebrates women and non binary people in the dublin music scene.</li>
+	  <li>The truth about Niall Blaise @ the soundhouse 15/01/24.</li>
+	  <li>Emigrate release gig, Martina and the Moons, Sin é. 10/12/23.</li>
 
 <h1>Artists I manage</h1>
 <br>
@@ -187,18 +192,12 @@
 <h1>Events I manage</h1>
 <div class="events">
 	<div class="events-item">
-		<img src="img/effectsbridgegirl.jpeg" alt="Image 1">
+		<img src="img/acdpurplegig.jpg" alt="Image 1">
 		<div class="image-title">Ladies First</div>
 	</div>
 	<div class="events-item">
-		<img src="img/niallchurch2.JPG" alt="Image 2">
-		<div class="image-title">Niall Bliase</div>
-	</div>
-	<div class="events-item">
-		<img src="img/effects1.jpeg" alt="Image 2">
-		<a href="https://www.instagram.com/alanadinan/" target="_blank">
-		<div class="image-title">Martina and the Moons</div>
-		</a>
+		<img src="img/acdniall.jpg" alt="Image 2">
+		<div class="image-title">Glee Club</div>
 	</div>
 </div>
 
