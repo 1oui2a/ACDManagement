@@ -5,8 +5,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
  function db_connect(){
      $servername = "localhost";
-     $username = "root";
-     $password = "";
+     $username = "louiza";
+     $password = "root";
      $dbname = "acdmanagement";
 
         // Create connection
