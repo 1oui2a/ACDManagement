@@ -2,7 +2,7 @@
  function db_connect(){
      $servername = "localhost";
      $username = "louiza";
-     $password = "root";
+     $password = "";
      $dbname = "acdmanagement";
         $conn = mysqli_connect($servername, $username, $password, $dbname);
         if (!$conn) {
