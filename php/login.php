@@ -102,7 +102,7 @@ if(isset($_POST['login'])){ // Check if the login form is submitted
                 <td colspan="2" align="right"><input type="submit" value="login" name="login"></td>
             </tr>
             <tr>
-                <td colspan="2" align="right"><a href="registration.php">Register</a></td>
+                <td colspan="2" align="right"><a href="php">Register</a></td>
             </tr>
 
         </form>
